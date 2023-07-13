@@ -1,0 +1,28 @@
+:root{
+  --font__raleway: 'Raleway', sans-serif;
+
+  --blue: #2A7AE4;
+  --white: #ffffff;
+  --gray:#f5f5f5;
+  --light__blue: #EAF2FD; 
+  --black__gray: #464646;
+  --light__gray: #C8C8C8;
+  --blue__secondary: #1f6bce;
+  
+  --text__size-xl: 3.25rem;
+  --text__size-m: 1.375rem;
+  --text__size-s: 1rem;
+  
+  --text__weight-b: 700;
+  --text__weight-r: 500;
+  --text__weight-l: 200;
+  --text__weight-n: normal;
+
+  --padding__xl: 3rem;
+  --padding__l: 2.5rem;
+  --padding__m: 1.5rem;
+  --padding__s: 1rem;
+  --padding__xs: .5rem;
+
+  --max__width_l: 90vw;
+}

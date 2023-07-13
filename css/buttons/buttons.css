@@ -1,0 +1,29 @@
+.btn{
+  height: 2.8rem;
+  cursor: pointer;
+  min-width: 9rem;
+  max-width: 200px;
+  background-color: transparent;
+  font-size: var(--text__size-s);
+  font-weight: var(--text__weight-r);
+  transition: all .2s ease-in-out;
+}
+
+.btn__primary{
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.btn__primary:active{
+  background-color: var(--blue__secondary);
+}
+
+.btn__primary-outline{
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.btn__primary-outline:active{
+  background-color: var(--blue__secondary);
+  color: var(--white);
+}
