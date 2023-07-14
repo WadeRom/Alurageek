@@ -26,3 +26,10 @@
 
   --max__width_l: 90vw;
 }
+
+.all__container{
+  margin: 0 auto;
+  max-width: var(--max__width_l);
+  font-family: var(--font__raleway);
+  padding: var(--padding__s) var(--padding__s);
+}
