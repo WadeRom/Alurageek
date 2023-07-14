@@ -1,5 +1,6 @@
 .header__login{order: 2}
 .header__logo{width: 7rem}
+.header__login{margin-left: auto;}
 
 .header__container{
   row-gap: 1rem;
@@ -24,8 +25,6 @@
   padding: var(--padding__xs) var(--padding__s);
   margin-left: var(--padding__l);
 }
-
-.header__login{margin-left: auto;}
 
 @media screen and (max-width: 600px) {
   .header__login{order: 0; margin-left: 0;}
