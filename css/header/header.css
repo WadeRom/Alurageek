@@ -8,9 +8,6 @@
   margin: 0 auto;
   flex-wrap: wrap;
   max-height: 6rem;
-  max-width: var(--max__width_l);
-  font-family: var(--font__raleway);
-  padding: var(--padding__s) var(--padding__s);
 }
 
 .header__search{
