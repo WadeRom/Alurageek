@@ -7,7 +7,6 @@
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  max-height: 6rem;
 }
 
 .header__search{
@@ -17,10 +16,10 @@
   align-items: center;
   border-radius: 3rem;
   align-items: center;
-  justify-content: space-between;
   background-color: var(--gray);
-  padding: var(--padding__xs) var(--padding__s);
   margin-left: var(--padding__l);
+  justify-content: space-between;
+  padding: var(--padding__xs) var(--padding__s);
 }
 
 @media screen and (max-width: 600px) {
