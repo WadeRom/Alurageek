@@ -144,7 +144,7 @@ sup {
 
 img {
   border-style: none;
-  box-sizing: border-boxS;
+  box-sizing: border-box;
 }
 
 /* Forms
@@ -198,6 +198,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  cursor: pointer;
   -webkit-appearance: button;
   -webkit-tap-highlight-color: transparent;
 }
@@ -349,4 +350,8 @@ template {
 
 [hidden] {
   display: none;
+}
+p{
+  margin: 0;
+  padding: 0;
 }
