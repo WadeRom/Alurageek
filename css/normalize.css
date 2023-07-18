@@ -72,6 +72,7 @@ a {
   text-decoration: none;
   justify-content: center;
   background-color: transparent;
+  color: inherit;
 }
 
 /**
@@ -354,4 +355,11 @@ template {
 p{
   margin: 0;
   padding: 0;
+}
+
+ul, li{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  color: inherit;
 }
