@@ -1,0 +1,66 @@
+.contact__logo{max-width: 12rem}
+.contact__form__item{ position: relative }
+.contact__form-title{margin: 0;padding: 0}
+.contact{background-color: var(--light__blue)}
+.contact__container, .contact__links-list, .contact__form{display: flex}
+
+.contact__container{
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: var(--black__gray);
+  font-family: var(--font__raleway);
+  justify-content: space-between;
+}
+
+.contact__info{
+  flex: 1;
+  gap: 1rem;
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+}
+
+.contact__links-list{
+  gap: 1rem;
+  max-width: 12rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-weight: var(--text__weight-n);
+}
+
+.contact__form{
+  flex: 1;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form__item-input, .contact__form__item-textarea{
+    width: 100%;
+    max-width: 100%;
+    padding: 1.2rem 1rem;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: var(--black__gray);
+    background-color: var(--white);
+}
+
+.contact__form__item-title{
+    left: 1rem;
+    top: 1.2rem;
+    position: absolute;
+    color: var(--light__gray);
+    transition: all .2s ease-out;
+    font-weight: var(--text__weight-r);
+}
+
+.contact__form__item-title:has(~textarea:not(:placeholder-shown)),
+.contact__form__item-title:has(~input:not(:placeholder-shown)),
+.contact__form__item-title:has(~textarea:focus),
+.contact__form__item-title:has(~input:focus){
+    transform: translate(-1rem, -2.5rem) scale(.8);
+}
