@@ -1,5 +1,5 @@
 .contact__logo{max-width: 12rem}
-.contact__form__item{ position: relative }
+.contact__form__item{position: relative}
 .contact__form-title{margin: 0;padding: 0}
 .contact{background-color: var(--light__blue)}
 .contact__container, .contact__links-list, .contact__form{display: flex}
