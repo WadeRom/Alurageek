@@ -1,7 +1,8 @@
 .products__card-img {width: 100%}
+.products__title {font-size: var(--text__size-m);}
 .products__card-price {font-weight: var(--text__weight-b)}
 .products__card-btn {color: var(--blue);font-weight: var(--text__weight-b)}
-.products__title {font-size: var(--text__size-m);}
+.products__section{padding-top: var(--padding__l);padding-bottom: var(--padding__l)}
 
 .products__texts, .products__card, .products__link{
   display: flex;
@@ -23,7 +24,6 @@
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
-
 .products__card {
   gap: 0.5rem;
   flex-direction: column;
@@ -31,4 +31,3 @@
   background-color: transparent;
   font-size: var(--text__size-xs);
 }
-
