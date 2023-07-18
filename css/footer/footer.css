@@ -1,0 +1,5 @@
+.footer__container{
+  padding-top: var(--padding__l);
+  padding-bottom: var(--padding__l);
+  text-align: center;
+}
