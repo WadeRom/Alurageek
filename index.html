@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/footer/footer.css">
   <link rel="stylesheet" href="./css/header/header.css">
   <link rel="stylesheet" href="./css/banner/banner.css">
+  <link rel="stylesheet" href="./css/contact/contact.css">
   <link rel="stylesheet" href="./css/buttons/buttons.css">
   <link rel="stylesheet" href="./css/products/products.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +28,11 @@
   </section>
 
   <section class="banner__container">
-    <div class=" all__container banner__content">
+    <article class=" all__container banner__content">
       <h1 class="banner__title">Febrero Promocional</h1>
       <p class="banner__text">Productos seleccionados con un 33% de descuento</p>
       <button class="banner__btn btn btn__primary">Ver consolas</button>
-    </div>
+    </article >
   </section>
 
   <section class="products__section">
@@ -85,6 +87,39 @@
     </article>
   </section>
 
+  <section class="contact">
+    <article class="all__container contact__container">
+      <div class="contact__info">
+        <img class="contact__logo" src="./public/images/Logo.svg" alt="">
+        <ul class="contact__links-list">
+          <li class="contact__links-item"><a href="#">Quienes somos</a></li>
+          <li class="contact__links-item"><a href="#">Política de privacidad</a></li>
+          <li class="contact__links-item"><a href="#">Nuestras Tiendas</a></li>
+          <li class="contact__links-item"><a href="#">Programa de fidelidad</a></li>
+          <li class="contact__links-item"><a href="#">Quiero ser franquiciado</a></li>
+          <li class="contact__links-item"><a href="#">Anúncie aquí</a></li>
+        </ul>
+      </div>
+      <form action="" class="contact__form">
+        <h4 class="contact__form-title">Hable con nosotros</h4>
+        <div class="contact__form__item" for="subject">
+          <label form="name">
+            <span class="contact__form__item-title">Asunto</span>
+            <input class="contact__form__item-input" type="text" name="subject" id="subject" placeholder=" ">
+          </label>
+        </div>
+        <div class="contact__form__item" for="message">
+          <label for="message">
+            <span class="contact__form__item-title">Mensaje</span>
+            <textarea class="contact__form__item-input" type="text" name="message" id="message" placeholder=" " rows="5"></textarea>
+          </label>
+        </div>
+        <button class="btn btn__primary">Enviar</button>
+      </form>
+    </article>
+  </section>
+
+  <footer class="all__container footer__container">Desarrollado por Walter Romero 2023</footer>
 </body>
 <script type="module" src="./index.js"></script>
 </html>
