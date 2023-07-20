@@ -7,17 +7,18 @@ export const allCategories = async () => {
   return response
 };
 
-export const allProductsForCategory = async () => {
-  const categories = ["women's clothing", "electronics", "jewelery"]
-  
+export const allProductsForCategory = async (limit) => {
+  const max = limit || '6';
+  const categories = ["women's clothing", "electronics", "jewelery"];
+
   const products = async(category) => {
-    const response = await GET(`products/category/${category}?limit=6`)
+    const response = await GET(`products/category/${category}?limit=${max}`);
     return response;
   }
 
-  const response = categories.map( async(category, index) => {
+  const response = categories.map( async(category) => {
     const product = await products(category);
-    return {id:index+1, category:category, items:product}
+    return {category:category, items:product}
   });
 
   return response
