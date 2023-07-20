@@ -11,7 +11,7 @@ export const allProductsForCategory = async () => {
   const categories = ["women's clothing", "electronics", "jewelery"]
   
   const products = async(category) => {
-    const response = await GET('products/category/'+category)
+    const response = await GET(`products/category/${category}?limit=6`)
     return response;
   }
 
