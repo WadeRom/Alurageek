@@ -1,10 +1,10 @@
 import { allProductsForCategory } from "./service.js";
 import { createLoadingGif } from "../utilities/loading.js";
 
-const createCategoryHead = (id, category) => `
+const createCategoryHead = (category) => `
   <div class="products__texts">
     <h3 class="products__title">${category}</h3>
-    <a href="#" class="products__link" id="${id}">
+    <a href="#" class="products__link" id="${category}">
       Ver todo 
       <i class="material-symbols-rounded">
         arrow_forward
@@ -20,12 +20,12 @@ const createCategoryBody = ({ image, id, title, price }) => `
     <button class="products__card-btn" id="${id}">Ver producto</button>
   </div>`;
 
-const createCategoryProductContainer = ({ id, category, items }) => {
+const createCategoryProductContainer = ({category, items}) => {
   const container = document.createElement('article');
  
   container.classList.add('all__container');
    container.innerHTML = `
-    ${createCategoryHead(id, category)}
+    ${createCategoryHead(category)}
     <div class="products__cards-container">
       ${items.map(product => createCategoryBody(product)).join('')}
     </div>`;
