@@ -1,4 +1,4 @@
-import { GET } from "../../services/index.js";
+import { GET } from "../../services/index.mjs";
 
 export const allCategories = async () => {
   const categories = await GET('products/categories');
@@ -9,7 +9,7 @@ export const allCategories = async () => {
 
 export const allProductsForCategory = async (limit) => {
   const max = limit || '6';
-  const categories = ["women's clothing", "electronics", "jewelery"];
+  const categories = ["men's clothing", "electronics", "women's clothing", "jewelery"];
 
   const products = async(category) => {
     const response = await GET(`products/category/${category}?limit=${max}`);

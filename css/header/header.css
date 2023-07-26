@@ -12,7 +12,8 @@
 .header__search{
   width: 35%;
   display: flex;
-  overflow: hidden;
+  flex-wrap: wrap;
+  position: relative;
   align-items: center;
   border-radius: 3rem;
   align-items: center;
@@ -27,14 +28,62 @@
   .header__search-input:not(:focus){width: 0}
   .header__container{justify-content: space-between}
   .header__search:focus-within{background-color: var(--gray)}
-  .header__search-input:not(:placeholder-shown){width: 100vw}
+  .header__search-input:not(:placeholder-shown){width: 74vw}
   .header__search-input::placeholder{color: var(--light__gray)}
   .header__search{width:auto; background-color: transparent; margin: 0;}
-  .header__search:has(.header__search-input:is(:not(:placeholder-shown))){width: 100vw; background-color: var(--gray)}
+  .header__search:has(.header__search-input:is(:not(:placeholder-shown))){ background-color: var(--gray)}
 
   .header__search-input{
-    width: 100vw;
+    width: 75vw;
+    align-self: stretch;
     color: var(--black__gray);
     transition: all 0.6s ease-in-out;
   }
 }
+
+.header__search__results-container {
+  left:0;
+  right: 0;
+  z-index: 3; 
+  width: 100%;
+  top: 3.6rem;
+  min-height: 5rem;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 0.8rem;
+  background-color: var(--gray);
+}
+
+.search__results-container{
+  overflow-y: auto;
+  max-height: 18rem;
+  margin: 1rem;
+}
+
+.search__results-container::-webkit-scrollbar{
+  width: 0;
+}
+
+.search__results-item{
+  gap: 1rem;
+  display: flex;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0.2rem;
+  background-color: var(--white);
+}
+
+.search__results-link{
+  flex: 2;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.search__results-image{
+  width: 2.5rem;
+  object-fit: contain;
+}
+
+
+.search_not_display{display: none;}

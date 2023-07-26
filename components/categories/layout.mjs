@@ -1,5 +1,5 @@
-import { allProductsForCategory } from "./service.js";
-import { createLoadingGif } from "../utilities/loading.js";
+import { allProductsForCategory } from "./service.mjs";
+import { createLoadingGif } from "../utilities/loading.mjs";
 
 const createCategoryHead = (category) => `
   <div class="products__texts">
@@ -33,7 +33,7 @@ const createCategoryProductContainer = ({category, items}) => {
   return container;
 };
 
-export const layout = async () => {
+export const categoriesLayout = async () => {
   const gif = createLoadingGif();
   const categories = await allProductsForCategory();
   const layoutContainer = document.querySelector('[data-products-container]');

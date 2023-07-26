@@ -1,4 +1,4 @@
-import { baseUrl } from "./env.js";
+import { baseUrl } from "./env.mjs";
 export const GET = (url) => {
   const response = fetch(baseUrl+url)
   .then(response => response.json())

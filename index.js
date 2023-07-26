@@ -1,7 +1,5 @@
-import { layout } from "./components/categories/layout.js";
-
-(
-  () => {
-    layout();
-  }
-)()
+import { init } from "./components/exportAll.js";
+( () => {
+  init()
+}
+)();
